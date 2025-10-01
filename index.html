@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>October 1</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Background audio -->
+  <audio id="bg-audio" src="music/song.mp3" preload="auto"></audio>
+
+  <!-- Controls -->
+  <div class="audio-controls">
+    <button id="play-pause">Play</button>
+    <input id="volume" type="range" min="0" max="1" step="0.01" value="1.0" />
+  </div>
+
+  <!-- Overlay if autoplay blocked -->
+  <div id="play-overlay" class="play-overlay hidden">
+    <div class="overlay-card">
+      <p>I love you Rain 🍂</p>
+      <button id="overlay-play">Play</button>
+    </div>
+  </div>
+
+  <!-- Falling leaves background -->
+  <div class="leaves">
+    <div class="leaf"></div>
+    <div class="leaf"></div>
+    <div class="leaf"></div>
+    <div class="leaf"></div>
+    <div class="leaf"></div>
+  </div>
+
+  <!-- Main layout -->
+  <div class="container">
+    <!-- Left: Photo + caption + lyrics -->
+    <div class="left-panel">
+      <div class="photo-frame">
+        <img src="images/us.jpg" alt="Us together" />
+      </div>
+      <div class="caption">🍁 My favorite place will always be wherever you are. 🍁</div>
+      <div id="lyrics-display"></div>
+    </div>
+
+    <!-- Right: Messages -->
+    <div class="right-panel">
+      <div id="message-display"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
